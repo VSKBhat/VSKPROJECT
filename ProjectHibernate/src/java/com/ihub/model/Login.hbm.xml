@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Apr, 2019 1:31:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.ihub.model.Login" table="login" catalog="defaultusernamepasswrdtable" optimistic-lock="version">
+        <id name="serialno" type="java.lang.Integer">
+            <column name="serialno" />
+            <generator class="identity" />
+        </id>
+        <property name="id" type="string">
+            <column name="id" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

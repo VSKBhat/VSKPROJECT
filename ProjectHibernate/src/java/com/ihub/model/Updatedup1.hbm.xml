@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 30 Apr, 2019 1:31:00 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.ihub.model.Updatedup1" table="updatedup1" catalog="defaultusernamepasswrdtable" optimistic-lock="version">
+        <id name="serialNo" type="int">
+            <column name="SerialNo" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="string">
+            <column name="UserName" length="500" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="500" />
+        </property>
+        <property name="item" type="string">
+            <column name="Item" length="50" />
+        </property>
+        <property name="portNo" type="string">
+            <column name="PortNo" length="50" />
+        </property>
+        <property name="brand" type="string">
+            <column name="Brand" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
